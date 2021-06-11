@@ -1,4 +1,4 @@
-package springDemo;
+package coaches;
 
 public interface Coach {
 

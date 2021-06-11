@@ -1,8 +1,10 @@
-package springDemo;
+package fortuneServices;
+
+import fortuneServices.FortuneService;
 
 import java.util.Random;
 
-public class RandomFortuneService implements FortuneService{
+public class RandomFortuneService implements FortuneService {
 
     private String[] fortunes = new String[] {"Fortune 1!", "Fortune 2!", "Fortune 3!"};
 

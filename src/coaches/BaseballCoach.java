@@ -1,6 +1,8 @@
-package springDemo;
+package coaches;
 
-public class BaseballCoach implements Coach{
+import fortuneServices.FortuneService;
+
+public class BaseballCoach implements Coach {
 
     // define a private field for the dependency
     private FortuneService fortuneService;

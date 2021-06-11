@@ -1,5 +1,6 @@
-package springDemo;
+package SetterDemo;
 
+import coaches.CricketCoach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SetterDemoApp {

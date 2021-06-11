@@ -19,20 +19,21 @@
 
     <!-- Define the dependency -->
     <bean id="myFortuneService"
-          class="springDemo.HappyFortuneService">
+          class="fortuneServices.HappyFortuneService">
     </bean>
+
     <bean id="myRandomFortuneService"
-          class="springDemo.RandomFortuneService">
+          class="fortuneServices.RandomFortuneService">
     </bean>
 
     <bean id="myCoach"
-    class="springDemo.BaseballCoach">
+    class="coaches.BaseballCoach">
          <!-- set up constructor injection -->
         <constructor-arg ref="myFortuneService" />
     </bean>
 
     <bean id="myCricketCoach"
-          class="springDemo.CricketCoach">
+          class="coaches.CricketCoach">
         <!-- set up setter injection -->
         <property name="fortuneService" ref="myRandomFortuneService"/>
 

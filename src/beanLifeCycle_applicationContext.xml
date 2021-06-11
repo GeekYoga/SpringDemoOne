@@ -19,10 +19,11 @@
           class="fortuneServices.HappyFortuneService">
     </bean>
 
-    <!-- set up scope - prototype (new object for each request) -->
+    <!-- init and destroy methods -->
     <bean id="myCoach"
           class="coaches.TrackCoach"
-          scope="prototype">
+          init-method="doMyStartupStuff"
+          destroy-method="doMyCleanupStuff">
          <!-- set up constructor injection -->
         <constructor-arg ref="myFortuneService" />
     </bean>

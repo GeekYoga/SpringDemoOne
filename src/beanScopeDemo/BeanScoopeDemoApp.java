@@ -1,6 +1,7 @@
-package springDemo;
+package beanScopeDemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import coaches.Coach;
 
 public class BeanScoopeDemoApp {
 

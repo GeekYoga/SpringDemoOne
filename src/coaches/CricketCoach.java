@@ -1,6 +1,8 @@
-package springDemo;
+package coaches;
 
-public class CricketCoach implements Coach{
+import fortuneServices.FortuneService;
+
+public class CricketCoach implements Coach {
 
     private FortuneService fortuneService;
     private String emailAddress;
